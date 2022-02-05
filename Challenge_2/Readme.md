@@ -22,6 +22,7 @@
 ## Usage
  * python challenge_2.py  - To get all the meta data of the instance
  * python challenge_2.py -k security-group-ids  - To get individual instance meta data values
+ * python challenge_2.py -k info - To get the info of the instance
 
  
 ### Author
