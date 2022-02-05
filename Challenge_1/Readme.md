@@ -31,5 +31,5 @@
  * Need to create multiple resources to actually deploy the 3 tier application like security_groups, internet gateway,
  nat gateway, NACLs, Automatic Scaling group for both web and core apps, Load Balancer etc.
 
-###Author
+### Author
 Chandra sekhar Jetty
