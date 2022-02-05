@@ -16,9 +16,12 @@
         * static variables like aws region, ec2 instance ami_id etc, These can also be dynamic by using data resources
  * Created a custom module database where we have created a main.tf file with just the database instance
         * Also has variables.tf file in the custom module directory which declares the variables required for the module
+       
+ * Created outputs.tf file where we declared output variables that will be printed in output once the infrastrcture has been deployed, this will be useful when we need to few deatils of the components we deployed 
 
 ## Usage
  * All the below commands are supposed to be triggered in the home directory /Challenge_1
+ * terraform init - to initilaze the terarform directory, to download the aws related modules etc
  * terraform validate  - this is to validate the terraform files
  * terraform plan -var deploy_environment="STAGE" - this is to check the plan before actual deployment in the aws cloud
  * terraform plan -var deploy_environment="PROD" - this is to deploy the required 3 tier infrastructure in to aws cloud
