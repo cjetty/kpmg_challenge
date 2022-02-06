@@ -1,5 +1,8 @@
 import requests
 from optparse import OptionParser
+import json
+
+aws_meta_link = "http://169.254.169.254/latest/meta-data/"
 
 
 def get_instance_meta_data(meta_link, result, meta_data_key_recursive=None):
@@ -18,7 +21,6 @@ def get_instance_meta_data(meta_link, result, meta_data_key_recursive=None):
 
 
 if __name__ == '__main__':
-    aws_meta_link = "http://169.254.169.254/latest/meta-data/"
     parser = OptionParser()
     parser.add_option("-k", "--key", dest="data_key", help="To get history of data", default=None)
     instance_meta_data = dict()
@@ -27,4 +29,4 @@ if __name__ == '__main__':
     if options.data_key:
         print(instance_meta_data_fetched.get(options.data_key))
     else:
-        print(instance_meta_data_fetched)
+        print(json.dumps(instance_meta_data_fetched, indent=4, sort_keys=True))

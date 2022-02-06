@@ -18,6 +18,7 @@
   * Libraries
        * requests
        * optparse
+       * json
 
 ## Usage
  * python challenge_2.py  - To get all the meta data of the instance
