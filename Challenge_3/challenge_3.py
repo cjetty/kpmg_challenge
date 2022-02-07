@@ -4,7 +4,7 @@ from typing import Dict
 def nested_key_solution(nested_key: Dict = None, keys: str = None):
     extracted_keys = keys.split("/")  # FETCHING INDIVIDUAL KEYS IN THE FORM OF LIST FROM THE PROVIDED STRING KEYS
     try:
-        for index, key_to_look in enumerate(extracted_keys):  # ITERATING OVER THE KEYS LIST
+        for key_to_look in extracted_keys:  # ITERATING OVER THE KEYS LIST
             value = nested_key.get(key_to_look)
             if value:
                 nested_key = value
