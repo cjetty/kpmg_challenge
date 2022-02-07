@@ -22,7 +22,7 @@ def get_instance_meta_data(meta_link, result, meta_data_key_recursive=None):
 
 if __name__ == '__main__':
     parser = OptionParser()
-    parser.add_option("-k", "--key", dest="data_key", help="To get history of data", default=None)
+    parser.add_option("-k", "--key", dest="data_key", help="Provide key to get individual meta data", default=None)
     instance_meta_data = dict()
     instance_meta_data_fetched = get_instance_meta_data(aws_meta_link, result=instance_meta_data)
     (options, args) = parser.parse_args()
