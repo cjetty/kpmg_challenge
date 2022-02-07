@@ -24,7 +24,7 @@
  * terraform init - to initilaze the terarform directory, to download the aws related modules etc
  * terraform validate  - this is to validate the terraform files
  * terraform plan -var deploy_environment="STAGE" - this is to check the plan before actual deployment in the aws cloud
- * terraform plan -var deploy_environment="PROD" - this is to deploy the required 3 tier infrastructure in to aws cloud
+ * terraform apply -var deploy_environment="PROD" - this is to deploy the required 3 tier infrastructure in to aws cloud
  
 
 ## Resources that are still required in this template 
